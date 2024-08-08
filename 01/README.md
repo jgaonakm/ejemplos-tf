@@ -9,6 +9,8 @@ Se define [una fuente de datos](https://registry.terraform.io/providers/linode/l
 
 Para este ejemplo es preciso utilizar alguna [que soporte el servicio de metadata](https://www.linode.com/docs/products/compute/compute-instances/guides/metadata/?tabs=linode-cli,macos#availability), como Ubuntu, para configurarla como servidor web.
 
+> [Qué es el servicio de metadata?](https://www.linode.com/docs/products/compute/compute-instances/guides/metadata/?tabs=linode-cli,macos#)
+
 ```
 data "linode_images" "ubuntu" {
   filter {
@@ -44,7 +46,9 @@ locals {
 
 ### 3. Crear el servidor web
 
-Se define la configuración de la máquina virtual. Igual que con la distribución, es necesario seleccionar una región [que soporte el servicio de metadata](https://www.linode.com/docs/products/compute/compute-instances/guides/metadata/?tabs=linode-cli,macos#availability).
+Se define la configuración de la máquina virtual para [crear la instancia](https://registry.terraform.io/providers/linode/linode/latest/docs/resources/instance). 
+
+Igual que con la distribución, para este ejemplo es necesario seleccionar una región [que soporte el servicio de metadata](https://www.linode.com/docs/products/compute/compute-instances/guides/metadata/?tabs=linode-cli,macos#availability).
 
 ```
 resource "linode_instance" "web_server" {
