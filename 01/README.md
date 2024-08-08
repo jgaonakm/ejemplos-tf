@@ -72,3 +72,5 @@ output "ip" {
   value = "Visita http://${linode_instance.web_server.ip_address}:8080"
 }
 ```
+## Grafo
+![Grafo](graph.png)
