@@ -10,3 +10,9 @@
 ## Ejemplos 
 
 1. [Configurar una máquina virtual usando cloud-init](01/README.md)
+
+
+## Recursos
+
+- [Linode Terraform Provider](https://registry.terraform.io/providers/linode/linode/latest/docs#configuration-reference)
+- [Akamai Cloud Computing](https://www.linode.com/)
