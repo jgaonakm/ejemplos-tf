@@ -22,6 +22,11 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+# Ignore lock file created by terraform init. When in a team, you should include this 
+# file in your version control repository so that you can discuss potential changes 
+# to your external dependencies via code review, just as you would discuss potential
+# changes to your configuration itself. 
+# Ref. https://developer.hashicorp.com/terraform/language/files/dependency-lock
 .terraform.lock.hcl
 
 # Ignore transient lock info files created by terraform apply
